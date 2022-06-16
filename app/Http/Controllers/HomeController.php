@@ -6,6 +6,7 @@ use App\Events\Destroy;
 use App\Http\Requests\ImageRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -32,7 +33,7 @@ class HomeController extends Controller
                 return response()->json(["response" => $response], 200);
 
             } catch (\Throwable $th) {
-
+                return $th;
                 DB::rollBack();
                 return response()->json(["errors" => ["error" => ["Error inesperado.."]]], 500);
             }
@@ -67,6 +68,7 @@ class HomeController extends Controller
         //Calidad de la imagen
         $quality = 20;
         //almacenamiento de la imagen
+        Storage::makeDirectory("public/$carpeta");
         imagejpeg($image, storage_path()."/app/public/$carpeta/".$name, $quality);
 
         return [
