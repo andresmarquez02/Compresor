@@ -40,8 +40,11 @@ Paso 6: Ejecutar en la linea de comando para generar la clave de encriptacion
 ```bash
   php artisan key:generate --show
 ```
+## Authors
 
-## Contactos
+- [@andresmarquez](https://www.github.com/andresmarquez02)
 
-Puedes contactarme +58 412 9298833
+## 🔗 Links
+[![portafolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://andresmarquez02.github.io/andres/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andres-marquez-02/)
 
