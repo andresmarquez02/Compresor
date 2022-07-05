@@ -40,7 +40,7 @@ Paso 6: Ejecutar en la linea de comando para generar la clave de encriptacion
 ```bash
   php artisan key:generate --show
 ```
-## Authors
+## Autor
 
 - [@andresmarquez](https://www.github.com/andresmarquez02)
 
